@@ -26,6 +26,15 @@ include ("templates/navbar.php");
             </div>
             <!-- /form city -->
 
+            <!-- form email -->
+            <div class="form-group shadow">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">E-mail</div>
+                    <input name="email" type="email" class="form-control" id="inputCity" placeholder="Ex: irineu@vocenemsabenemeu.com">
+                </div> 
+            </div>
+            <!-- /form email -->
+
             <!-- form comment -->
             <div class="form-group shadow">
                 <textarea name="comment" class="form-control" id="inputComment" rows="5" placeholder="Me envia uma mensagem falando um pouco de você não sei você, mas gosto de aventura."></textarea>
