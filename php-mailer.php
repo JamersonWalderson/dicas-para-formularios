@@ -2,6 +2,7 @@
 
 isset ($_POST['name']) ? $name = $_POST['name'] : $name = '';
 isset ($_POST['city']) ? $city = $_POST['city'] : $city = '';
+isset ($_POST['email']) ? $email = $_POST['email'] : $email = '';
 isset ($_POST['comment']) ? $comment = $_POST['comment'] : $comment = '';
 
 // Import PHPMailer classes into the global namespace
@@ -10,8 +11,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-// Load Composer's autoloader
-require 'vendor/autoload.php';
+require_once("phpmailer/class.phpmailer.php");
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
