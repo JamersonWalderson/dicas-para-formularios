@@ -1,4 +1,7 @@
 <?php
+    ini_set('display_errors', true);
+    error_reporting(E_ALL);
+
     isset ($_POST['name']) ? $name = $_POST['name'] : $name = '';
     isset ($_POST['city']) ? $city = $_POST['city'] : $city = '';
     isset ($_POST['comment']) ? $comment = $_POST['comment'] : $comment = '';
@@ -20,7 +23,7 @@
         echo ("Problema ao enviar!<br>");
         echo ("$name <br> $city <br> $comment <br>");
 
-        error_get_last()
+        echo (error_get_last());
 
     }
 
