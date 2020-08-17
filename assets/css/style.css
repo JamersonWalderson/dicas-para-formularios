@@ -1,0 +1,16 @@
+body {
+    background-color: #6A5ACD;
+    color: #fff;
+}
+.nav {
+    background-color: rgb(106,90,205);
+
+}
+.nav a {
+    color: white;
+
+}
+.row d-flex justify-content-center {
+    padding: 5%;
+
+}
