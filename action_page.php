@@ -18,6 +18,7 @@
     
     } else {
         echo ("Problema ao enviar!");
+        echo ("$name <br> $city <br> $comment <br>");
 
     }
 
