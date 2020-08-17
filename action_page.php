@@ -17,8 +17,10 @@
         echo ("Mensagem enviada com sucesso!");
     
     } else {
-        echo ("Problema ao enviar!");
+        echo ("Problema ao enviar!<br>");
         echo ("$name <br> $city <br> $comment <br>");
+
+        error_get_last()
 
     }
 
